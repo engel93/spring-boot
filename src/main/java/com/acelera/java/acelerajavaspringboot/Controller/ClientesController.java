@@ -14,7 +14,7 @@ import java.util.List;
 public class ClientesController {
 
 //    @RequestMapping(name = "/clientes", method = RequestMethod.GET)
-    @GetMapping(name = "/clientes")
+    @GetMapping()
     public ResponseEntity<List<Clientes>> getClientes(){
         List<Clientes> clientes = new ArrayList<Clientes>();
         clientes.add( new Clientes("Nome1", "CPF1"));
